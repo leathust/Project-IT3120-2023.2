@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: LibraryManagement
+
+  #Database Config
+  datasource:
+    url: jdbc:mysql://localhost:3306/pttkht_project
+    username: root
+    password: NgocLe*2004
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  #Hibernate
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+
+
+#Server Config
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+jwt:
+  secret-key: 2928cfc0dc24cce097a2859ce64c06adc814550cd28dced206d1c5d345bd5ce1
